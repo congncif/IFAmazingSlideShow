@@ -1,0 +1,16 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'IFSlideShow' do
+
+pod 'ADTransitionController', '~> 1.1'
+pod 'Vertigo', '~> 0.1'
+pod 'SDWebImage', '~> 3.7'
+pod 'MSWeakTimer', '~> 1.1'
+
+end
+
+target 'IFSlideShowTests' do
+
+end
+

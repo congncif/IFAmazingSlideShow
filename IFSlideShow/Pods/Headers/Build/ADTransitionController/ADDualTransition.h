@@ -1,0 +1,1 @@
+../../../ADTransitionController/ADTransitionController/ADDualTransition.h

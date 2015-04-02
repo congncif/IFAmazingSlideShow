@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ADTransitionController" "${PODS_ROOT}/Headers/Public/MSWeakTimer" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/Vertigo"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ADTransitionController" -isystem "${PODS_ROOT}/Headers/Public/MSWeakTimer" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/Vertigo"
+OTHER_LDFLAGS = -ObjC -l"Pods-IFSlideShow-ADTransitionController" -l"Pods-IFSlideShow-MSWeakTimer" -l"Pods-IFSlideShow-SDWebImage" -l"Pods-IFSlideShow-Vertigo" -framework "ImageIO" -framework "QuartzCore" -framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

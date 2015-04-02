@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>87DBBF38-C35B-4E0D-BAC6-48AA9BE979A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IFSlideShow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>293D3C0466DE4B1720C0ECD3C689CE4DDB3C6102</key>
+		<string>https://github.com/congncif/IFAmazingSlideShow.git</string>
+		<key>3E9EF2885A9765B2D30B3FF871B41FD5E6494298</key>
+		<string>https://bitbucket.org/ifourtech/ifkit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IFSlideShow/IFSlideShow.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>293D3C0466DE4B1720C0ECD3C689CE4DDB3C6102</key>
+		<string>../..</string>
+		<key>3E9EF2885A9765B2D30B3FF871B41FD5E6494298</key>
+		<string>../../../ifkit</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/congncif/IFAmazingSlideShow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>293D3C0466DE4B1720C0ECD3C689CE4DDB3C6102</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>293D3C0466DE4B1720C0ECD3C689CE4DDB3C6102</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IFAmazingSlideShow</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3E9EF2885A9765B2D30B3FF871B41FD5E6494298</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ifkit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
