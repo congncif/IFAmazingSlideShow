@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D2ABF121A5389D8006E775E /* IFZoomTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ABF111A5389D8006E775E /* IFZoomTransitionAnimation.m */; };
-		1D3C022F1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C022E1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.m */; };
 		1D420BB51A527F3300961AE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D420BB41A527F3300961AE9 /* main.m */; };
 		1D420BB81A527F3300961AE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D420BB71A527F3300961AE9 /* AppDelegate.m */; };
 		1D420BBB1A527F3300961AE9 /* IFSlideShow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D420BB91A527F3300961AE9 /* IFSlideShow.xcdatamodeld */; };
@@ -17,11 +16,12 @@
 		1D420BC31A527F3300961AE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D420BC21A527F3300961AE9 /* Images.xcassets */; };
 		1D420BC61A527F3300961AE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D420BC41A527F3300961AE9 /* LaunchScreen.xib */; };
 		1D420BD21A527F3300961AE9 /* IFSlideShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D420BD11A527F3300961AE9 /* IFSlideShowTests.m */; };
-		1D420BDD1A52801400961AE9 /* IFSlideShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D420BDC1A52801400961AE9 /* IFSlideShowViewController.m */; };
-		1DD89EBB1A52A5630071396F /* IFImageViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD89EB81A52A5630071396F /* IFImageViewerViewController.m */; };
-		1DD89EBC1A52A5630071396F /* IFPageImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD89EBA1A52A5630071396F /* IFPageImagesViewController.m */; };
 		1DD89F151A52C4B80071396F /* IFBaseTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD89F0C1A52C4B80071396F /* IFBaseTransitionAnimation.m */; };
 		5A38F4889D165757514DD8AE /* libPods-IFSlideShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41253AECAA02E2EA254E12C1 /* libPods-IFSlideShow.a */; };
+		93C2E7861AD2C7A5006F6D2C /* IFImageViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E77F1AD2C7A5006F6D2C /* IFImageViewerViewController.m */; };
+		93C2E7871AD2C7A5006F6D2C /* IFPageImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E7811AD2C7A5006F6D2C /* IFPageImagesViewController.m */; };
+		93C2E7881AD2C7A5006F6D2C /* IFSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E7831AD2C7A5006F6D2C /* IFSlideCollectionViewCell.m */; };
+		93C2E7891AD2C7A5006F6D2C /* IFSlideShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E7851AD2C7A5006F6D2C /* IFSlideShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		1D2ABF101A5389D8006E775E /* IFZoomTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFZoomTransitionAnimation.h; sourceTree = "<group>"; };
 		1D2ABF111A5389D8006E775E /* IFZoomTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFZoomTransitionAnimation.m; sourceTree = "<group>"; };
-		1D3C022D1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFSlideCollectionViewCell.h; sourceTree = "<group>"; };
-		1D3C022E1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFSlideCollectionViewCell.m; sourceTree = "<group>"; };
 		1D420BAF1A527F3300961AE9 /* IFSlideShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFSlideShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D420BB31A527F3300961AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D420BB41A527F3300961AE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,17 +51,20 @@
 		1D420BCB1A527F3300961AE9 /* IFSlideShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFSlideShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D420BD01A527F3300961AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D420BD11A527F3300961AE9 /* IFSlideShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFSlideShowTests.m; sourceTree = "<group>"; };
-		1D420BDB1A52801400961AE9 /* IFSlideShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFSlideShowViewController.h; sourceTree = "<group>"; };
-		1D420BDC1A52801400961AE9 /* IFSlideShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFSlideShowViewController.m; sourceTree = "<group>"; };
-		1DD89EB71A52A5630071396F /* IFImageViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFImageViewerViewController.h; sourceTree = "<group>"; };
-		1DD89EB81A52A5630071396F /* IFImageViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFImageViewerViewController.m; sourceTree = "<group>"; };
-		1DD89EB91A52A5630071396F /* IFPageImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFPageImagesViewController.h; sourceTree = "<group>"; };
-		1DD89EBA1A52A5630071396F /* IFPageImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFPageImagesViewController.m; sourceTree = "<group>"; };
 		1DD89F0B1A52C4B80071396F /* IFBaseTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFBaseTransitionAnimation.h; sourceTree = "<group>"; };
 		1DD89F0C1A52C4B80071396F /* IFBaseTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFBaseTransitionAnimation.m; sourceTree = "<group>"; };
 		1DD89F1A1A52C4ED0071396F /* IFZoomAnimatedProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFZoomAnimatedProtocol.h; sourceTree = "<group>"; };
 		41253AECAA02E2EA254E12C1 /* libPods-IFSlideShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFSlideShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA8358A3C78C3BDA958941B /* Pods-IFSlideShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSlideShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IFSlideShow/Pods-IFSlideShow.debug.xcconfig"; sourceTree = "<group>"; };
+		93C2E77D1AD2C7A5006F6D2C /* DefineMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacros.h; sourceTree = "<group>"; };
+		93C2E77E1AD2C7A5006F6D2C /* IFImageViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFImageViewerViewController.h; sourceTree = "<group>"; };
+		93C2E77F1AD2C7A5006F6D2C /* IFImageViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFImageViewerViewController.m; sourceTree = "<group>"; };
+		93C2E7801AD2C7A5006F6D2C /* IFPageImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFPageImagesViewController.h; sourceTree = "<group>"; };
+		93C2E7811AD2C7A5006F6D2C /* IFPageImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFPageImagesViewController.m; sourceTree = "<group>"; };
+		93C2E7821AD2C7A5006F6D2C /* IFSlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFSlideCollectionViewCell.h; sourceTree = "<group>"; };
+		93C2E7831AD2C7A5006F6D2C /* IFSlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFSlideCollectionViewCell.m; sourceTree = "<group>"; };
+		93C2E7841AD2C7A5006F6D2C /* IFSlideShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFSlideShowViewController.h; sourceTree = "<group>"; };
+		93C2E7851AD2C7A5006F6D2C /* IFSlideShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFSlideShowViewController.m; sourceTree = "<group>"; };
 		DA5EF83B93DAEAB1A15A6F8B /* Pods-IFSlideShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSlideShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-IFSlideShow/Pods-IFSlideShow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +90,7 @@
 		1D420BA61A527F3300961AE9 = {
 			isa = PBXGroup;
 			children = (
+				93C2E77C1AD2C7A5006F6D2C /* IFSlideShowSources */,
 				1DD89F0A1A52C4B80071396F /* VCTransitions */,
 				1D420BB11A527F3300961AE9 /* IFSlideShow */,
 				1D420BCE1A527F3300961AE9 /* IFSlideShowTests */,
@@ -119,14 +121,6 @@
 				1D420BC41A527F3300961AE9 /* LaunchScreen.xib */,
 				1D420BB91A527F3300961AE9 /* IFSlideShow.xcdatamodeld */,
 				1D420BB21A527F3300961AE9 /* Supporting Files */,
-				1D420BDB1A52801400961AE9 /* IFSlideShowViewController.h */,
-				1D420BDC1A52801400961AE9 /* IFSlideShowViewController.m */,
-				1D3C022D1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.h */,
-				1D3C022E1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.m */,
-				1DD89EB71A52A5630071396F /* IFImageViewerViewController.h */,
-				1DD89EB81A52A5630071396F /* IFImageViewerViewController.m */,
-				1DD89EB91A52A5630071396F /* IFPageImagesViewController.h */,
-				1DD89EBA1A52A5630071396F /* IFPageImagesViewController.m */,
 			);
 			path = IFSlideShow;
 			sourceTree = "<group>";
@@ -184,6 +178,22 @@
 				DA5EF83B93DAEAB1A15A6F8B /* Pods-IFSlideShow.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		93C2E77C1AD2C7A5006F6D2C /* IFSlideShowSources */ = {
+			isa = PBXGroup;
+			children = (
+				93C2E77D1AD2C7A5006F6D2C /* DefineMacros.h */,
+				93C2E77E1AD2C7A5006F6D2C /* IFImageViewerViewController.h */,
+				93C2E77F1AD2C7A5006F6D2C /* IFImageViewerViewController.m */,
+				93C2E7801AD2C7A5006F6D2C /* IFPageImagesViewController.h */,
+				93C2E7811AD2C7A5006F6D2C /* IFPageImagesViewController.m */,
+				93C2E7821AD2C7A5006F6D2C /* IFSlideCollectionViewCell.h */,
+				93C2E7831AD2C7A5006F6D2C /* IFSlideCollectionViewCell.m */,
+				93C2E7841AD2C7A5006F6D2C /* IFSlideShowViewController.h */,
+				93C2E7851AD2C7A5006F6D2C /* IFSlideShowViewController.m */,
+			);
+			path = IFSlideShowSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,12 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DD89EBC1A52A5630071396F /* IFPageImagesViewController.m in Sources */,
-				1D3C022F1A53ED3D00E7C3EF /* IFSlideCollectionViewCell.m in Sources */,
-				1DD89EBB1A52A5630071396F /* IFImageViewerViewController.m in Sources */,
-				1D420BDD1A52801400961AE9 /* IFSlideShowViewController.m in Sources */,
+				93C2E7891AD2C7A5006F6D2C /* IFSlideShowViewController.m in Sources */,
+				93C2E7881AD2C7A5006F6D2C /* IFSlideCollectionViewCell.m in Sources */,
+				93C2E7871AD2C7A5006F6D2C /* IFPageImagesViewController.m in Sources */,
 				1D2ABF121A5389D8006E775E /* IFZoomTransitionAnimation.m in Sources */,
 				1D420BB81A527F3300961AE9 /* AppDelegate.m in Sources */,
+				93C2E7861AD2C7A5006F6D2C /* IFImageViewerViewController.m in Sources */,
 				1D420BB51A527F3300961AE9 /* main.m in Sources */,
 				1DD89F151A52C4B80071396F /* IFBaseTransitionAnimation.m in Sources */,
 				1D420BBE1A527F3300961AE9 /* ViewController.m in Sources */,
