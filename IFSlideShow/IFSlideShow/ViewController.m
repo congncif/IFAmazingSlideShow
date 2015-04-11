@@ -52,17 +52,24 @@
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+
+    [self.view layoutSubviews];
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	if ([segue.identifier isEqualToString:@"IFSlideShowViewControllerSegue"]) {
 		IFSlideShowViewController *slideShowVC = segue.destinationViewController;
 		slideShowVC.photoPaths = @[
-                                   @"https://c1.staticflickr.com/3/2902/14245410815_864044dc17_c.jpg",
-                                   @"https://c2.staticflickr.com/6/5524/14058826897_505e9f2d68_c.jpg",
-                                   @"https://c1.staticflickr.com/3/2921/14222261506_17032e49d7_c.jpg",
-                                   @"https://c2.staticflickr.com/4/3813/14089018987_c2718df819_c.jpg",
-                                   @"https://c2.staticflickr.com/6/5543/14295711803_56126c8f32_c.jpg"
+                                   @"http://i.imgur.com/G5cA589.png",
+                                   @"http://i.imgur.com/MTga82K.png",
+                                   @"http://i.imgur.com/zKg73hq.png",
+                                   @"http://i.imgur.com/nafky5f.png",
+                                   @"http://i.imgur.com/nA8RVni.png",
+                                   @"http://i.imgur.com/y5gP9O2.png",
+                                   @"http://i.imgur.com/TGMrfnQ.jpg",
+                                   @"http://i.imgur.com/S9XTU61.jpg",
+                                   @"http://i.imgur.com/6I69iAd.jpg",
                                    ];
 		slideShowVC.delegate = self;
         slideShowVC.showPageControl = YES;

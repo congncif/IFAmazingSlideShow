@@ -44,7 +44,9 @@
 
 	self.pageController.dataSource = self;
 	self.pageController.delegate = self;
+    
 	[[self.pageController view] setFrame:[[self view] bounds]];
+    self.pageController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.automaticallyAdjustsScrollViewInsets = NO;
 
 	IFImageViewerViewController *initialViewController = [self viewControllerAtIndex:_currentPage];
@@ -66,6 +68,28 @@
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> )coordinator {
+    
+    [coordinator animateAlongsideTransition: ^(id < UIViewControllerTransitionCoordinatorContext > context)
+     {
+         // do whatever
+         
+     }                            completion: ^(id <UIViewControllerTransitionCoordinatorContext> context)
+     {
+         [self.view layoutSubviews];
+         IFImageViewerViewController *childViewController = (IFImageViewerViewController *)[self.pageController viewControllers][0];
+         childViewController.view.frame = self.view.frame;
+     }];
+    
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [self.view layoutSubviews];
+    IFImageViewerViewController *childViewController = (IFImageViewerViewController *)[self.pageController viewControllers][0];
+    childViewController.view.frame = self.view.frame;
 }
 
 /*
@@ -107,7 +131,8 @@
 	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
 	IFImageViewerViewController *childViewController = [storyboard instantiateViewControllerWithIdentifier:@"IFImageViewerViewController"];
-	childViewController.view.frame = self.view.bounds;
+	childViewController.view.frame = self.view.frame;
+    childViewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
 	childViewController.indexPage = index;
 	childViewController.imagePath = [self.dataSource imagePathAtIndex:index];
 	childViewController.zoomEnabled = _zoomEnabled;

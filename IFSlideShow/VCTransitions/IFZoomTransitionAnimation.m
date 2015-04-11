@@ -122,13 +122,7 @@
 		// Compute the final frame for the temporary view based on the reference
 		// image view
 		CGRect transitionViewFinalFrame = [transitionContext.containerView convertRect:self.referenceImageView.bounds fromView:self.referenceImageView];
-//        CGRect transitionViewFinalFrame = [self.referenceImageView.superview convertRect:sourceView.bounds fromView:sourceView];
-//        transitionViewFinalFrame = [containerView convertRect:transitionViewFinalFrame fromView:self.referenceImageView.superview];
-
-		if (UIApplication.sharedApplication.isStatusBarHidden && ![toViewController prefersStatusBarHidden]) {
-			transitionViewFinalFrame = CGRectOffset(transitionViewFinalFrame, 0, 20);
-		}
-
+        
 		// Create a temporary view for the zoom out transition based on the image
 		// view controller contents
 		UIImageView *transitionView = [[UIImageView alloc] initWithImage:sourceView.image];

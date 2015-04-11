@@ -73,20 +73,24 @@
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> )coordinator {
+    
 	[coordinator animateAlongsideTransition: ^(id < UIViewControllerTransitionCoordinatorContext > context)
 	{
-//	    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
 	    // do whatever
-	    [self viewWillLayoutSubviews];
-	    [self performSelector:@selector(scrollToPage:) withObject:@(_currentPage) afterDelay:0];
+	    
 	}                            completion: ^(id <UIViewControllerTransitionCoordinatorContext> context)
 	{
+        [self.view layoutSubviews];
+        [self refreshLayout];
+        [self performSelector:@selector(scrollToPage:) withObject:@(_currentPage) afterDelay:0];
 	}];
 
 	[super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [self.view layoutSubviews];
+    [self refreshLayout];
 	[self performSelector:@selector(scrollToPage:) withObject:@(_currentPage) afterDelay:0];
 }
 
@@ -204,12 +208,16 @@
 
 #pragma mark - Functions
 - (void)scrollToPage:(NSNumber *)pageNumber {
-	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:pageNumber.integerValue inSection:0];
-	[self.clvSlideImages scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    [self scrollToPage:pageNumber animated:NO];
+}
 
-	if (self.delegate) {
-		[self.delegate updateReferenceView:[self refercenceView]];
-	}
+- (void)scrollToPage:(NSNumber *)pageNumber animated: (BOOL)animated{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:pageNumber.integerValue inSection:0];
+    [self.clvSlideImages scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:animated];
+    
+    if (self.delegate) {
+        [self.delegate updateReferenceView:[self refercenceView]];
+    }
 }
 
 - (void)refreshScroller {
@@ -240,7 +248,7 @@
 
 - (void)timerFire:(NSTimer *)timer {
 	_currentPage = [self nextPage];
-	[self scrollToPage:@(_currentPage)];
+	[self scrollToPage:@(_currentPage) animated:YES];
 	[self refreshPageControl];
 }
 

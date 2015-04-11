@@ -75,6 +75,13 @@
 	self.scrContainerView.contentSize = self.imvContent.bounds.size;
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.scrContainerView.zoomScale = 1;
+    self.scrContainerView.contentSize = self.imvContent.bounds.size;
+}
+
+
 #pragma mark - Rotate
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> )coordinator {
 	[coordinator animateAlongsideTransition: ^(id < UIViewControllerTransitionCoordinatorContext > context)
@@ -83,12 +90,14 @@
 	    // do whatever
 	}                            completion: ^(id <UIViewControllerTransitionCoordinatorContext> context)
 	{
+        [self.view layoutSubviews];
 	}];
 
 	[super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [self.view layoutSubviews];
 }
 
 #pragma mark - Functions
