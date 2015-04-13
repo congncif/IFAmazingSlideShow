@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-IFSlideShow-ADTransitionController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-IFSlideShow-MSWeakTimer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-IFSlideShow-SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-IFSlideShow-Vertigo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-IFSlideShow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>67985FD2D5BCAAABAD70283A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71F6891079C357E563BB2A78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8D67F286878A382458A8B6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA26AEE0331B347B0B355949</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2FC73DBED3FFA25A1364C3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

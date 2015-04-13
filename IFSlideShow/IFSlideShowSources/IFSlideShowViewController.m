@@ -82,7 +82,9 @@
 	{
         [self.view layoutSubviews];
         [self refreshLayout];
-        [self performSelector:@selector(scrollToPage:) withObject:@(_currentPage) afterDelay:0];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self scrollToPage:@(_currentPage) animated:YES];
+        });
 	}];
 
 	[super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
@@ -91,7 +93,9 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
     [self.view layoutSubviews];
     [self refreshLayout];
-	[self performSelector:@selector(scrollToPage:) withObject:@(_currentPage) afterDelay:0];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self scrollToPage:@(_currentPage) animated:YES];
+    });
 }
 
 #pragma mark - Setters
