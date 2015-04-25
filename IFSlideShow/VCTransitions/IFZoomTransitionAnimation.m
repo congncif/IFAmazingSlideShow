@@ -81,7 +81,7 @@
 		[UIView animateWithDuration:duration
 		                      delay:0
 		     usingSpringWithDamping:1
-		      initialSpringVelocity:0.5
+		      initialSpringVelocity:0.0
 		                    options:UIViewAnimationOptionCurveLinear
 		                 animations: ^{
 		    fromViewController.view.alpha = 0;
