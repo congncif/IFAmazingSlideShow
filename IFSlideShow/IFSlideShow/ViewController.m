@@ -59,15 +59,15 @@
 	if ([segue.identifier isEqualToString:@"IFSlideShowViewControllerSegue"]) {
 		IFSlideShowViewController *slideShowVC = segue.destinationViewController;
 		slideShowVC.photoPaths = @[
-		    @"http://i.imgur.com/G5cA589.png",
-		    @"http://i.imgur.com/MTga82K.png",
-		    @"http://i.imgur.com/zKg73hq.png",
-		    @"http://i.imgur.com/nafky5f.png",
-		    @"http://i.imgur.com/nA8RVni.png",
-		    @"http://i.imgur.com/y5gP9O2.png",
-		    @"http://i.imgur.com/TGMrfnQ.jpg",
-		    @"http://i.imgur.com/S9XTU61.jpg",
-		    @"http://i.imgur.com/6I69iAd.jpg",
+		    @"https://i.imgur.com/G5cA589.png",
+		    @"https://i.imgur.com/MTga82K.png",
+		    @"https://i.imgur.com/zKg73hq.png",
+		    @"https://i.imgur.com/nafky5f.png",
+		    @"https://i.imgur.com/nA8RVni.png",
+		    @"https://i.imgur.com/y5gP9O2.png",
+		    @"https://i.imgur.com/TGMrfnQ.jpg",
+		    @"https://i.imgur.com/S9XTU61.jpg",
+		    @"https://i.imgur.com/6I69iAd.jpg",
 		];
 		slideShowVC.delegate = self;
 		slideShowVC.showPageControl = YES;

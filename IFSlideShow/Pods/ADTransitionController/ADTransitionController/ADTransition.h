@@ -36,7 +36,7 @@ typedef enum {
 } ADTransitionOrientation;
 
 
-@interface ADTransition : NSObject {
+@interface ADTransition : NSObject <CAAnimationDelegate> {
     id <ADTransitionDelegate> __weak _delegate;
     ADTransitionType _type;
 }
@@ -48,4 +48,5 @@ typedef enum {
 + (ADTransition *)nullTransition;
 - (ADTransition *)reverseTransition;
 - (NSArray *)getCircleApproximationTimingFunctions;
+- (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag;
 @end
