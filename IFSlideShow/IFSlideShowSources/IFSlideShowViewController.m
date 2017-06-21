@@ -258,20 +258,32 @@
 
 - (NSInteger)nextPage {
 	NSInteger nextPage;
-	if (_directionReverse) {
-		nextPage = _currentPage - 1;
-	}
-	else {
-		nextPage = _currentPage + 1;
-	}
-
-	if (nextPage >= 0 && nextPage < [self numberOfPhotos]) {
-		return nextPage;
-	}
-	else {
-		_directionReverse = !_directionReverse;
-		return [self nextPage];
-	}
+    
+    if (self.autoScrollType == AutoScrollTypeReverse) {
+        if (_directionReverse) {
+            nextPage = _currentPage - 1;
+        }
+        else {
+            nextPage = _currentPage + 1;
+        }
+        
+        if (nextPage >= 0 && nextPage < [self numberOfPhotos]) {
+            return nextPage;
+        }
+        else {
+            _directionReverse = !_directionReverse;
+            return [self nextPage];
+        }
+    } else {
+        nextPage = _currentPage + 1;
+        if (nextPage >= 0 && nextPage < [self numberOfPhotos]) {
+            return nextPage;
+        }
+        else {
+            return 0;
+        }
+    }
+	
 }
 
 - (void)stopAutoScroller {

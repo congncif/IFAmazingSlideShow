@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, AutoScrollType) {
+    AutoScrollTypeReverse,
+    AutoScrollTypeCircle
+};
+
 @class IFSlideShowViewController;
 @class IFPageImagesViewController;
 @protocol IFSlideShowDelegate <NSObject>
@@ -26,6 +31,7 @@
 @property (nonatomic, strong) NSArray *photoPaths;
 @property (nonatomic, assign) BOOL showPageControl;
 @property (nonatomic, assign) BOOL autoScrollEnabled;
+@property (nonatomic, assign) AutoScrollType autoScrollType; // default = AutoScrollTypeReverse
 @property (nonatomic) NSTimeInterval autoTimeInterval;
 
 - (UIImageView *)refercenceView;

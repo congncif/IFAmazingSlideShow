@@ -73,6 +73,7 @@
 		slideShowVC.showPageControl = YES;
 		slideShowVC.autoScrollEnabled = YES;
 		slideShowVC.autoTimeInterval = 5;
+        slideShowVC.autoScrollType = AutoScrollTypeCircle;
 	}
 }
 
